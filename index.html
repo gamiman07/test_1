@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>커뮤니티 사이트</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #333; color: #fff; padding: 1rem; text-align: center; }
+        nav { margin: 1rem; }
+        nav a { margin: 0 10px; text-decoration: none; color: #333; }
+        .container { max-width: 800px; margin: auto; padding: 1rem; }
+        .post, .comment { border: 1px solid #ddd; padding: 10px; margin-bottom: 1rem; }
+        .comment { margin-left: 20px; }
+    </style>
 </head>
 <body>
-    <h1> 안녕 세상아 </h1>
-    <h2> 테스트22 </h2>
-    <p> 이것은 변경사항입니다 </p><!-- ㅇㅇㅇ -->
-    <nav> 메뉴 메뉴 메뉴 메뉴 메뉴 메뉴 메뉴 </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>커뮤니티 사이트</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">홈</a>
+        <a href="#forum">게시판</a>
+        <a href="#login">로그인</a>
+        <a href="#register">회원가입</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Home Section -->
+        <section id="home">
+            <h2>커뮤니티 소개</h2>
+            <p>여기는 커뮤니티 사이트입니다. 다양한 주제에 대해 소통하고 정보를 나눌 수 있습니다.</p>
+            <h3>공지사항</h3>
+            <ul>
+                <li>공지사항 1</li>
+                <li>공지사항 2</li>
+            </ul>
+        </section>
+
+        <!-- Forum Section -->
+        <section id="forum">
+            <h2>게시판</h2>
+
+            <!-- Sample Post -->
+            <div class="post">
+                <h3>게시물 제목</h3>
+                <p>게시물 내용이 여기에 표시됩니다.</p>
+                <small>작성자: 사용자1 | 날짜: 2024-11-04</small>
+                
+                <!-- Comment Section -->
+                <div class="comment">
+                    <p><strong>댓글 작성자</strong>: 댓글 내용입니다.</p>
+                </div>
+                <div class="comment">
+                    <p><strong>댓글 작성자2</strong>: 또 다른 댓글 내용입니다.</p>
+                </div>
+                
+                <!-- Add Comment Form -->
+                <form>
+                    <label for="comment">댓글 작성:</label><br>
+                    <textarea id="comment" name="comment" rows="2" cols="40"></textarea><br>
+                    <button type="submit">댓글 등록</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login">
+            <h2>로그인</h2>
+            <form>
+                <label for="username">아이디:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">비밀번호:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">로그인</button>
+            </form>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register">
+            <h2>회원가입</h2>
+            <form>
+                <label for="newUsername">아이디:</label>
+                <input type="text" id="newUsername" name="newUsername"><br><br>
+                <label for="newPassword">비밀번호:</label>
+                <input type="password" id="newPassword" name="newPassword"><br><br>
+                <button type="submit">회원가입</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 커뮤니티 사이트</p>
+    </footer>
+
 </body>
 </html>
